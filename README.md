@@ -11,8 +11,7 @@ This should run [Ramses_ESP](https://github.com/IndaloTech/ramses_esp/) out of t
 ESP32 S3 DevKit-C module (9 units wide)
 (TODO link and pic)
 
-ESP32 S3 DevKit-C module (10 units wide)
-(TODO link and pic)
+[ESP32 S3 DevKit-C module](https://nl.aliexpress.com/item/1005006387668474.html) (10 units wide)
 
 Waveshare ESP32 s3 mini 
 (Close 2 solder bridges to connect 3v3 and GND on pins 1 and 2)
@@ -33,7 +32,7 @@ ESP32 c3 mini board.
  - The IPEX stamp antenna on the module should also be useable (not tested)
 
 This repo contains the KiCad 8 files as well as the gerbers to produce the PCB.
-I used JLPCB for my board. Just upload the zip-file in the gerber folder to JLPCB.
+I used JLCPCB for my board. Just upload the zip-file in the gerber folder to JLPCB.
 
 ## Known issues (improvements)
  - Messed up the ESP32C3 supermini pinout. ESP32S3 supermini unknown.
@@ -50,5 +49,7 @@ Using the esp32-s3 it clones the behaviour of the HGI-80: RF tot USB serial and 
 
 ## Where can I order?
 Buy the original ramses ESP from [IndaloTech](https://indalo-tech.onlineweb.shop/). This product is not affialiated at all with IndaloTech. It's just a clone. However, I've previously bought a SSM-D2 (ramses_esp predecessor) and its build quality is excellent.
+
+You can order the PCB from your favorite PCB fabshop using the gerbers in the gerber folder. I used JLCPCB.
 
 I might sell some stuff on [Tweakers V&A](https://tweakers.net/aanbod/user/90636/) (NL only)
