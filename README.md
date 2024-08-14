@@ -4,7 +4,9 @@ Adapter board for [ebyte e07-900m10s CC1101 module](https://www.ebyte.com/en/pro
 3d view:
 ![3dview](pics/3d.png)
 
-This should run Ramses ESP out of the box on:
+![pcb](pics/pcb.png)
+
+This should run [Ramses_ESP](https://github.com/IndaloTech/ramses_esp/) out of the box on:
 
 ESP32 S3 DevKit-C module (9 units wide)
 (TODO link and pic)
@@ -43,10 +45,10 @@ I used JLPCB for my board. Just upload the zip-file in the gerber folder to JLPC
 
 ![ramses_esp proto](pics/ramses_esp_proto.png)
 
-This is a clone of the (excelent!) [ramses_esp](https://github.com/IndaloTech/ramses_esp/) Ramses-II RF bridge. (evofw3 HGI-80 clone).
+This is a clone of the (excelent!) [Ramses_ESP](https://github.com/IndaloTech/ramses_esp/) Ramses-II RF bridge. (evofw3 HGI-80 clone).
 Using the esp32-s3 it clones the behaviour of the HGI-80: RF tot USB serial and adds MQTT over WiFi.
 
 ## Where can I order?
-Buy ramses_esp from [IndaloTech](https://indalo-tech.onlineweb.shop/). This product is not affialiated at all with IndaloTech. It's just a clone. However, I've previously bought a SSM-D2 (ramses_esp predecessor) and its build quality is excellent.
+Buy the original ramses ESP from [IndaloTech](https://indalo-tech.onlineweb.shop/). This product is not affialiated at all with IndaloTech. It's just a clone. However, I've previously bought a SSM-D2 (ramses_esp predecessor) and its build quality is excellent.
 
 I might sell some stuff on [Tweakers V&A](https://tweakers.net/aanbod/user/90636/) (NL only)
