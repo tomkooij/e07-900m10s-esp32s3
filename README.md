@@ -35,3 +35,9 @@ ESP32 c3 mini board.
 
 This repo contains the KiCad 8 files as well as the gerbers to produce the PCB.
 I used JLPCB for my board. Just upload the zip-file in the gerber folder to JLPCB.
+
+Known issues (improvements)
+ - Messed up the ESP32C3 supermini pinout. ESP32S3 supermini unknown.
+ - Mounting holes not 100% square
+ - Mounting hole H1 is in ESP32S3 Antenna keep out zone
+ - Pin markings on back of PCB (for soldering) would be nice
