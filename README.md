@@ -1,8 +1,6 @@
 # e07-900m10s-esp32s3 adapter board for ESP32 S3 DevKit and mini boards
 Adapter board for [ebyte e07-900m10s CC1101 module](https://www.ebyte.com/en/product-view-news.html?id=1567)
 
-(currently in production at JLPCB)
-
 3d view:
 ![3dview](pics/3d.png)
 
@@ -15,7 +13,6 @@ ESP32 S3 DevKit-C module (10 units wide)
 (TODO link and pic)
 
 Waveshare ESP32 s3 mini 
-![ramses_esp with esp32s3](breakout_esp32s3mini.png)
 (Close 2 solder bridges to connect 3v3 and GND on pins 1 and 2)
 
 ESP32 c3 mini board.
@@ -36,8 +33,20 @@ ESP32 c3 mini board.
 This repo contains the KiCad 8 files as well as the gerbers to produce the PCB.
 I used JLPCB for my board. Just upload the zip-file in the gerber folder to JLPCB.
 
-Known issues (improvements)
+## Known issues (improvements)
  - Messed up the ESP32C3 supermini pinout. ESP32S3 supermini unknown.
  - Mounting holes not 100% square
  - Mounting hole H1 is in ESP32S3 Antenna keep out zone
  - Pin markings on back of PCB (for soldering) would be nice
+
+## Prototype:
+
+![ramses_esp proto](pics/ramses_esp_proto.png)
+
+This is a clone of the (excelent!) [ramses_esp](https://github.com/IndaloTech/ramses_esp/) Ramses-II RF bridge. (evofw3 HGI-80 clone).
+Using the esp32-s3 it clones the behaviour of the HGI-80: RF tot USB serial and adds MQTT over WiFi.
+
+## Where can I order?
+Buy ramses_esp from [IndaloTech](https://indalo-tech.onlineweb.shop/). This product is not affialiated at all with IndaloTech. It's just a clone. However, I've previously bought a SSM-D2 (ramses_esp predecessor) and its build quality is excellent.
+
+I might sell some stuff on [Tweakers V&A](https://tweakers.net/aanbod/user/90636/) (NL only)
