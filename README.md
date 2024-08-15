@@ -53,7 +53,7 @@ The PCB uses the Ramses ESP pinouts:
  - pin 37: MISO
  - pin 38: CSN
  - pin 39: GDO0
- - pin 40: GDO1
+ - pin 40: GDO2
 
 optional:
  - pin 41: RX
@@ -62,15 +62,21 @@ optional:
 On DevKit C board pin 0 is connected to the BOOT button, which is the Ramses ESP option button.
 
 ## Other ESP32 boards
-Waveshare ESP32 s3 mini 
+[Waveshare ESP32 s3 zero](https://www.waveshare.com/esp32-s3-zero.htm) 
 
 ![s3](pics/s3_placement.png)
 
 
 Mount the ESP32 s3 mini as shown.
 Close S3_3V3 and S3_GND solder bridges.
+```
+idf.py menuconfig
+ Partition Table (Single factory app (large), no OTA) 
+CC1011 pins 1-6 instead of 35-40 (MOST-GDO2)
+```
+Optionally connect RX and TX to other pins and configure in `idf.py menuconfig`
 
-ESP32 c3 mini board.
+[ESP32 c3 mini board](https://nl.aliexpress.com/i/1005005319963906.html)
 
 ![c3](pics/c3_placement.png)
 
@@ -78,6 +84,7 @@ Mount the ESP32 C3 mini board with pin 21 at "GDO2" (pin40 on esp32s3 devkit C).
 On the side of the USB connector one hole on the PCB is not used.
 Close the C3_3V3 and C3_GND solderbridges.
 
+Note that the C3 is a single-core RISC-V board. It may not run Ramses_ESP correctly. (Perhaps turn wifi/mqtt off).
 
 ## Where can I order?
 Buy the original ramses ESP from [IndaloTech](https://indalo-tech.onlineweb.shop/). This product is not affialiated at all with IndaloTech. It's just a clone. However, I've previously bought a SSM-D2 (ramses_esp predecessor) and its build quality is excellent.
