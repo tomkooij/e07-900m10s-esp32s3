@@ -19,7 +19,7 @@ Waveshare ESP32 s3 mini
 ESP32 c3 mini board.
 (Close the other solder bridges, 3v3 and GND are off by two pins, botch wires needed)
 
- - The header is a standard .1" (2.54mm) PCB header.
+ - [E07 900M10S](https://www.ebyte.com/en/product-view-news.html?id=1567) cc1101 module.
  - C1 and C2 are 1206 SMD size
  - C1 = 100nF
  - C2 = 10uF
@@ -27,9 +27,12 @@ ESP32 c3 mini board.
  - LED TX blue SMD 1206
  - LED RX green SMD 1206
  - THT LEDs as backup.
- - Suitable values for R1-R4 is 22O ohm
+ - Suitable value for R1-R4 is 22O ohm
  - Antenna connector is [PCB SMA female](https://nl.aliexpress.com/item/1005005708712726.html) (use standard 1.6mm board thickness)
+ - Antenna is a male SMA 3dBi 868/915Mhz 5cm antenna. This [TX-915-XPL-100 antenna](https://nl.aliexpress.com/item/1005004843392517.html) works great.
  - The IPEX stamp antenna on the module should also be useable (not tested)
+ - The header is a standard .1" (2.54mm) PCB header. It is not needed, just for testing.
+
 
 This repo contains the KiCad 8 files as well as the gerbers to produce the PCB.
 I used JLCPCB for my board. Just upload the zip-file in the gerber folder to JLPCB.
