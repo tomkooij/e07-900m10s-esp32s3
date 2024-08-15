@@ -13,12 +13,6 @@ ESP32 S3 DevKit-C module (9 units wide)
 
 [ESP32 S3 DevKit-C module](https://nl.aliexpress.com/item/1005006387668474.html) (10 units wide)
 
-Waveshare ESP32 s3 mini 
-(Close 2 solder bridges to connect 3v3 and GND on pins 1 and 2)
-
-ESP32 c3 mini board.
-(Close the other solder bridges, 3v3 and GND are off by two pins, botch wires needed)
-
  - [E07 900M10S](https://www.ebyte.com/en/product-view-news.html?id=1567) cc1101 module.
  - C1 and C2 are 1206 SMD size
  - C1 = 100nF
@@ -42,6 +36,7 @@ I used JLCPCB for my board. Just upload the zip-file in the gerber folder to JLP
  - Mounting holes not 100% square
  - Mounting hole H1 is in ESP32S3 Antenna keep out zone
  - Pin markings on back of PCB (for soldering) would be nice
+ - GND fill on entire top layer
 
 ## Prototype:
 
@@ -49,6 +44,22 @@ I used JLCPCB for my board. Just upload the zip-file in the gerber folder to JLP
 
 This is a clone of the (excellent!) [Ramses_ESP](https://github.com/IndaloTech/ramses_esp/) Ramses-II RF bridge. (evofw3 HGI-80 clone).
 Using the esp32-s3 it clones the behaviour of the HGI-80: RF tot USB serial and adds MQTT over WiFi.
+
+## Other ESP32 boards
+Waveshare ESP32 s3 mini 
+![s3](pics/s3_placement.png)
+
+
+Mount the ESP32 s3 mini as shown.
+Close S3_3V3 and S3_GND solder bridges.
+
+ESP32 c3 mini board.
+![c3](pics/c3_placement.png)
+
+Mount the ESP32 C3 mini board with pin 21 at "GDO2" (pin40 on esp32s3 devkit C).
+On the side of the USB connector one hole on the PCB is not used.
+Close the C3_3V3 and C3_GND solderbridges.
+
 
 ## Where can I order?
 Buy the original ramses ESP from [IndaloTech](https://indalo-tech.onlineweb.shop/). This product is not affialiated at all with IndaloTech. It's just a clone. However, I've previously bought a SSM-D2 (ramses_esp predecessor) and its build quality is excellent.
