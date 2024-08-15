@@ -47,6 +47,7 @@ Using the esp32-s3 it clones the behaviour of the HGI-80: RF tot USB serial and 
 
 ## Other ESP32 boards
 Waveshare ESP32 s3 mini 
+
 ![s3](pics/s3_placement.png)
 
 
@@ -54,6 +55,7 @@ Mount the ESP32 s3 mini as shown.
 Close S3_3V3 and S3_GND solder bridges.
 
 ESP32 c3 mini board.
+
 ![c3](pics/c3_placement.png)
 
 Mount the ESP32 C3 mini board with pin 21 at "GDO2" (pin40 on esp32s3 devkit C).
