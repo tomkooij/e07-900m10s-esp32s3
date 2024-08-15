@@ -45,6 +45,22 @@ I used JLCPCB for my board. Just upload the zip-file in the gerber folder to JLP
 This is a clone of the (excellent!) [Ramses_ESP](https://github.com/IndaloTech/ramses_esp/) Ramses-II RF bridge. (evofw3 HGI-80 clone).
 Using the esp32-s3 it clones the behaviour of the HGI-80: RF tot USB serial and adds MQTT over WiFi.
 
+## Pinouts
+The PCB uses the Ramses ESP pinouts:
+
+ - pin 35: MOSI
+ - pin 36: SCL
+ - pin 37: MISO
+ - pin 38: CSN
+ - pin 39: GDO0
+ - pin 40: GDO1
+
+optional:
+ - pin 41: RX
+ - pin 42: TX
+
+On DevKit C board pin 0 is connected to the BOOT button, which is the Ramses ESP option button.
+
 ## Other ESP32 boards
 Waveshare ESP32 s3 mini 
 
