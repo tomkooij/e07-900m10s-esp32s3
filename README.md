@@ -17,12 +17,12 @@ Waveshare ESP32 s3 mini
 (Close 2 solder bridges to connect 3v3 and GND on pins 1 and 2)
 
 ESP32 c3 mini board.
-(Close the other solder bridges, untested, may need some extra wires)
+(Close the other solder bridges, 3v3 and GND are off by two pins, botch wires needed)
 
  - The header is a standard .1" (2.54mm) PCB header.
  - C1 and C2 are 1206 SMD size
  - C1 = 100nF
- - C2 = 4.7uF
+ - C2 = 10uF
  - C2 is probably not needed, it is used as a buffer for large currents while sending.
  - LED TX blue SMD 1206
  - LED RX green SMD 1206
@@ -35,7 +35,7 @@ This repo contains the KiCad 8 files as well as the gerbers to produce the PCB.
 I used JLCPCB for my board. Just upload the zip-file in the gerber folder to JLPCB.
 
 ## Known issues (improvements)
- - Messed up the ESP32C3 supermini pinout. ESP32S3 supermini unknown.
+ - Messed up the ESP32C3 supermini pinout. Jumper/botch wires necessary.
  - Mounting holes not 100% square
  - Mounting hole H1 is in ESP32S3 Antenna keep out zone
  - Pin markings on back of PCB (for soldering) would be nice
@@ -44,7 +44,7 @@ I used JLCPCB for my board. Just upload the zip-file in the gerber folder to JLP
 
 ![ramses_esp proto](pics/ramses_esp_proto.png)
 
-This is a clone of the (excelent!) [Ramses_ESP](https://github.com/IndaloTech/ramses_esp/) Ramses-II RF bridge. (evofw3 HGI-80 clone).
+This is a clone of the (excellent!) [Ramses_ESP](https://github.com/IndaloTech/ramses_esp/) Ramses-II RF bridge. (evofw3 HGI-80 clone).
 Using the esp32-s3 it clones the behaviour of the HGI-80: RF tot USB serial and adds MQTT over WiFi.
 
 ## Where can I order?
