@@ -21,7 +21,7 @@ ESP32 S3 DevKit-C module (9 units wide)
  - LED TX blue SMD 1206
  - LED RX green SMD 1206
  - THT LEDs as backup.
- - Suitable value for R1-R4 is 22O ohm
+ - Suitable value for R1-R4 is about 1k ohms. I tried 220 ohm but is was too bright.
  - Antenna connector is [PCB SMA female](https://nl.aliexpress.com/item/1005005708712726.html) (use standard 1.6mm board thickness)
  - Antenna is a male SMA 3dBi 868/915Mhz 5cm antenna. This [TX-915-XPL-100 antenna](https://nl.aliexpress.com/item/1005004843392517.html) works great.
  - The IPEX stamp antenna on the module should also be useable (not tested)
